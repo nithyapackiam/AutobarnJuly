@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources", glue="org.Stepdefinition", monochrome=true, 
-dryRun=false, plugin= {"html:target\\Reports", "junit:target\\Reports\\ab.xml",
+dryRun=false, tags="@Smoke", plugin= {"html:target\\Reports", "junit:target\\Reports\\ab.xml",
 "json:target\\Reports\\autobarn.json", 
 "rerun:src\\test\\resources\\Rerun\\Failed.txt"})
 
